@@ -1,0 +1,624 @@
+<!--  Ninja-to-Cat assignment
+ clicking a frame on the main image will randomly load one of the five available frame images
+clicking the buttons at the top will load the whole image for that character
+clicking the images at right, adjacent to the main image, will load the coresonding characters frame slice into the main image   -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ninja to cat or Dali Lama to friends assignment</title>
+        <script src= 'https://code.jquery.com/jquery-2.2.4.js'></script>
+        <script>
+            function RandRow1(){
+                randInt = Math.floor((Math.random() * 5) + 1);
+                switch(randInt){
+                case 1 :
+                        $('#dali1').show();
+                        $('#av1').hide();
+                        $('#gw1').hide();
+                        $('#gs1').hide();
+                        $('#mrt1').hide();
+                        break;
+                case 2 :
+                        $('#dali1').hide();
+                        $('#av1').show();
+                        $('#gw1').hide();
+                        $('#gs1').hide();
+                        $('#mrt1').hide();
+                        break;
+                    case 3:
+                        $('#dali1').hide();
+                        $('#av1').hide();
+                        $('#gw1').show();
+                        $('#gs1').hide();
+                        $('#mrt1').hide();
+                        break;
+                    case 4:
+                        $('#dali1').hide();
+                        $('#av1').hide();
+                        $('#gw1').hide();
+                        $('#gs1').show();
+                        $('#mrt1').hide();
+                        break;
+                    case 5:
+                        $('#dali1').hide();
+                        $('#av1').hide();
+                        $('#gw1').hide();
+                        $('#gs1').hide();
+                        $('#mrt1').show();
+                        break;
+                }
+            }
+            function RandRow2(){
+                randInt = Math.floor((Math.random() * 5) + 1);
+                switch(randInt){
+                case 1 :
+                        $('#dali2').show();
+                        $('#av2').hide();
+                        $('#gw2').hide();
+                        $('#gs2').hide();
+                        $('#mrt2').hide();
+                        break;
+                case 2 :
+                        $('#dali2').hide();
+                        $('#av2').show();
+                        $('#gw2').hide();
+                        $('#gs2').hide();
+                        $('#mrt2').hide();
+                        break;
+                    case 3:
+                        $('#dali2').hide();
+                        $('#av2').hide();
+                        $('#gw2').show();
+                        $('#gs2').hide();
+                        $('#mrt2').hide();
+                        break;
+                    case 4:
+                        $('#dali2').hide();
+                        $('#av2').hide();
+                        $('#gw2').hide();
+                        $('#gs2').show();
+                        $('#mrt2').hide();
+                        break;
+                    case 5:
+                        $('#dali2').hide();
+                        $('#av2').hide();
+                        $('#gw2').hide();
+                        $('#gs2').hide();
+                        $('#mrt2').show();
+                        break;
+                }
+            }
+            function RandRow3(){
+                randInt = Math.floor((Math.random() * 5) + 1);
+                switch(randInt){
+                case 1 :
+                        $('#dali3').show();
+                        $('#av3').hide();
+                        $('#gw3').hide();
+                        $('#gs3').hide();
+                        $('#mrt3').hide();
+                        break;
+                case 2 :
+                        $('#dali3').hide();
+                        $('#av3').show();
+                        $('#gw3').hide();
+                        $('#gs3').hide();
+                        $('#mrt3').hide();
+                        break;
+                    case 3:
+                        $('#dali3').hide();
+                        $('#av3').hide();
+                        $('#gw3').show();
+                        $('#gs3').hide();
+                        $('#mrt3').hide();
+                        break;
+                    case 4:
+                        $('#dali3').hide();
+                        $('#av3').hide();
+                        $('#gw3').hide();
+                        $('#gs3').show();
+                        $('#mrt3').hide();
+                        break;
+                    case 5:
+                        $('#dali3').hide();
+                        $('#av3').hide();
+                        $('#gw3').hide();
+                        $('#gs3').hide();
+                        $('#mrt3').show();
+                        break;
+                }
+            }
+            function RandRow4(){
+                randInt = Math.floor((Math.random() * 5) + 1);
+                switch(randInt){
+                case 1 :
+                        $('#dali4').show();
+                        $('#av4').hide();
+                        $('#gw4').hide();
+                        $('#gs4').hide();
+                        $('#mrt4').hide();
+                        break;
+                case 2 :
+                        $('#dali4').hide();
+                        $('#av4').show();
+                        $('#gw4').hide();
+                        $('#gs4').hide();
+                        $('#mrt4').hide();
+                        break;
+                    case 3:
+                        $('#dali4').hide();
+                        $('#av4').hide();
+                        $('#gw4').show();
+                        $('#gs4').hide();
+                        $('#mrt4').hide();
+                        break;
+                    case 4:
+                        $('#dali4').hide();
+                        $('#av4').hide();
+                        $('#gw4').hide();
+                        $('#gs4').show();
+                        $('#mrt4').hide();
+                        break;
+                    case 5:
+                        $('#dali4').hide();
+                        $('#av4').hide();
+                        $('#gw4').hide();
+                        $('#gs4').hide();
+                        $('#mrt4').show();
+                        break;
+                }
+            }
+            function RandRow5(){
+                randInt = Math.floor((Math.random() * 5) + 1);
+                switch(randInt){
+                case 1 :
+                        $('#dali5').show();
+                        $('#av5').hide();
+                        $('#gw5').hide();
+                        $('#gs5').hide();
+                        $('#mrt5').hide();
+                        break;
+                case 2 :
+                        $('#dali5').hide();
+                        $('#av5').show();
+                        $('#gw5').hide();
+                        $('#gs5').hide();
+                        $('#mrt5').hide();
+                        break;
+                    case 3:
+                        $('#dali5').hide();
+                        $('#av5').hide();
+                        $('#gw5').show();
+                        $('#gs5').hide();
+                        $('#mrt5').hide();
+                        break;
+                    case 4:
+                        $('#dali5').hide();
+                        $('#av5').hide();
+                        $('#gw5').hide();
+                        $('#gs5').show();
+                        $('#mrt5').hide();
+                        break;
+                    case 5:
+                        $('#dali5').hide();
+                        $('#av5').hide();
+                        $('#gw5').hide();
+                        $('#gs5').hide();
+                        $('#mrt5').show();
+                        break;
+                }
+            }
+        </script>
+        <script>
+        $(document).ready(function(){
+
+            $(".hidden").hide()
+
+            $("#dali").click(function(){
+                $('#dali1').show();
+                $('#av1').hide();
+                $('#gw1').hide();
+                $('#gs1').hide();
+                $('#mrt1').hide();
+                $('#dali2').show();
+                $('#av2').hide();
+                $('#gw2').hide();
+                $('#gs2').hide();
+                $('#mrt2').hide();
+                $('#dali3').show();
+                $('#av3').hide();
+                $('#gw3').hide();
+                $('#gs3').hide();
+                $('#mrt3').hide();
+                $('#dali4').show();
+                $('#av4').hide();
+                $('#gw4').hide();
+                $('#gs4').hide();
+                $('#mrt4').hide();
+                $('#dali5').show();
+                $('#av5').hide();
+                $('#gw5').hide();
+                $('#gs5').hide();
+                $('#mrt5').hide();
+            })
+            $("#av").click(function(){
+                $('#dali1').hide();
+                $('#av1').show();
+                $('#gw1').hide();
+                $('#gs1').hide();
+                $('#mrt1').hide();
+                $('#dali2').hide();
+                $('#av2').show();
+                $('#gw2').hide();
+                $('#gs2').hide();
+                $('#mrt2').hide();
+                $('#dali3').hide();
+                $('#av3').show();
+                $('#gw3').hide();
+                $('#gs3').hide();
+                $('#mrt3').hide();
+                $('#dali4').hide();
+                $('#av4').show();
+                $('#gw4').hide();
+                $('#gs4').hide();
+                $('#mrt4').hide();
+                $('#dali5').hide();
+                $('#av5').show();
+                $('#gw5').hide();
+                $('#gs5').hide();
+                $('#mrt5').hide();
+            })
+            $("#gw").click(function(){
+                $('#dali1').hide();
+                $('#av1').hide();
+                $('#gw1').show();
+                $('#gs1').hide();
+                $('#mrt1').hide();
+                $('#dali2').hide();
+                $('#av2').hide();
+                $('#gw2').show();
+                $('#gs2').hide();
+                $('#mrt2').hide();
+                $('#dali3').hide();
+                $('#av3').hide();
+                $('#gw3').show();
+                $('#gs3').hide();
+                $('#mrt3').hide();
+                $('#dali4').hide();
+                $('#av4').hide();
+                $('#gw4').show();
+                $('#gs4').hide();
+                $('#mrt4').hide();
+                $('#dali5').hide();
+                $('#av5').hide();
+                $('#gw5').show();
+                $('#gs5').hide();
+                $('#mrt5').hide();
+            })
+            $("#gs").click(function(){
+                $('#dali1').hide();
+                $('#av1').hide();
+                $('#gw1').hide();
+                $('#gs1').show();
+                $('#mrt1').hide();
+                $('#dali2').hide();
+                $('#av2').hide();
+                $('#gw2').hide();
+                $('#gs2').show();
+                $('#mrt2').hide();
+                $('#dali3').hide();
+                $('#av3').hide();
+                $('#gw3').hide();
+                $('#gs3').show();
+                $('#mrt3').hide();
+                $('#dali4').hide();
+                $('#av4').hide();
+                $('#gw4').hide();
+                $('#gs4').show();
+                $('#mrt4').hide();
+                $('#dali5').hide();
+                $('#av5').hide();
+                $('#gw5').hide();
+                $('#gs5').show();
+                $('#mrt5').hide();
+            })
+            $("#mrt").click(function(){
+                $('#dali1').hide();
+                $('#av1').hide();
+                $('#gw1').hide();
+                $('#gs1').hide();
+                $('#mrt1').show();
+                $('#dali2').hide();
+                $('#av2').hide();
+                $('#gw2').hide();
+                $('#gs2').hide();
+                $('#mrt2').show();
+                $('#dali3').hide();
+                $('#av3').hide();
+                $('#gw3').hide();
+                $('#gs3').hide();
+                $('#mrt3').show();
+                $('#dali4').hide();
+                $('#av4').hide();
+                $('#gw4').hide();
+                $('#gs4').hide();
+                $('#mrt4').show();
+                $('#dali5').hide();
+                $('#av5').hide();
+                $('#gw5').hide();
+                $('#gs5').hide();
+                $('#mrt5').show();
+            })
+            $("#dalir1").click(function(){
+                $('#dali1').show();
+                $('#av1').hide();
+                $('#gw1').hide();
+                $('#gs1').hide();
+                $('#mrt1').hide();
+            })
+            $("#dalir2").click(function(){
+                $('#dali2').show();
+                $('#av2').hide();
+                $('#gw2').hide();
+                $('#gs2').hide();
+                $('#mrt2').hide();
+            })
+            $("#dalir3").click(function(){
+                $('#dali3').show();
+                $('#av3').hide();
+                $('#gw3').hide();
+                $('#gs3').hide();
+                $('#mrt3').hide();
+            })
+            $("#dalir4").click(function(){
+                $('#dali4').show();
+                $('#av4').hide();
+                $('#gw4').hide();
+                $('#gs4').hide();
+                $('#mrt4').hide();
+            })
+            $("#dalir5").click(function(){
+                $('#dali5').show();
+                $('#av5').hide();
+                $('#gw5').hide();
+                $('#gs5').hide();
+                $('#mrt5').hide();
+            })
+            $("#avr1").click(function(){
+                $('#dali1').hide();
+                $('#av1').show();
+                $('#gw1').hide();
+                $('#gs1').hide();
+                $('#mrt1').hide();
+            })
+            $("#avr2").click(function(){
+                $('#dali2').hide();
+                $('#av2').show();
+                $('#gw2').hide();
+                $('#gs2').hide();
+                $('#mrt2').hide();
+            })
+            $("#avr3").click(function(){
+                $('#dali3').hide();
+                $('#av3').show();
+                $('#gw3').hide();
+                $('#gs3').hide();
+                $('#mrt3').hide();
+            })
+            $("#avr4").click(function(){
+                $('#dali4').hide();
+                $('#av4').show();
+                $('#gw4').hide();
+                $('#gs4').hide();
+                $('#mrt4').hide();
+            })
+            $("#avr5").click(function(){
+                $('#dali5').hide();
+                $('#av5').show();
+                $('#gw5').hide();
+                $('#gs5').hide();
+                $('#mrt5').hide();
+            })
+            $("#gwr1").click(function(){
+                $('#dali1').hide();
+                $('#av1').hide();
+                $('#gw1').show();
+                $('#gs1').hide();
+                $('#mrt1').hide();
+            })
+            $("#gwr2").click(function(){
+                $('#dali2').hide();
+                $('#av2').hide();
+                $('#gw2').show();
+                $('#gs2').hide();
+                $('#mrt2').hide();
+            })
+            $("#gwr3").click(function(){
+                $('#dali3').hide();
+                $('#av3').hide();
+                $('#gw3').show();
+                $('#gs3').hide();
+                $('#mrt3').hide();
+            })
+            $("#gwr4").click(function(){
+                $('#dali4').hide();
+                $('#av4').hide();
+                $('#gw4').show();
+                $('#gs4').hide();
+                $('#mrt4').hide();
+            })
+            $("#gwr5").click(function(){
+                $('#dali5').hide();
+                $('#av5').hide();
+                $('#gw5').show();
+                $('#gs5').hide();
+                $('#mrt5').hide();
+            })
+            $("#gsr1").click(function(){
+                $('#dali1').hide();
+                $('#av1').hide();
+                $('#gw1').hide();
+                $('#gs1').show();
+                $('#mrt1').hide();
+            })
+            $("#gsr2").click(function(){
+                $('#dali2').hide();
+                $('#av2').hide();
+                $('#gw2').hide();
+                $('#gs2').show();
+                $('#mrt2').hide();
+            })
+            $("#gsr3").click(function(){
+                $('#dali3').hide();
+                $('#av3').hide();
+                $('#gw3').hide();
+                $('#gs3').show();
+                $('#mrt3').hide();
+            })
+            $("#gsr4").click(function(){
+                $('#dali4').hide();
+                $('#av4').hide();
+                $('#gw4').hide();
+                $('#gs4').show();
+                $('#mrt4').hide();
+            })
+            $("#gsr5").click(function(){
+                $('#dali5').hide();
+                $('#av5').hide();
+                $('#gw5').hide();
+                $('#gs5').show();
+                $('#mrt5').hide();
+            })
+            $("#mrtr1").click(function(){
+                $('#dali1').hide();
+                $('#av1').hide();
+                $('#gw1').hide();
+                $('#gs1').hide();
+                $('#mrt1').show();
+            })
+            $("#mrtr2").click(function(){
+                $('#dali2').hide();
+                $('#av2').hide();
+                $('#gw2').hide();
+                $('#gs2').hide();
+                $('#mrt2').show();
+            })
+            $("#mrtr3").click(function(){
+                $('#dali3').hide();
+                $('#av3').hide();
+                $('#gw3').hide();
+                $('#gs3').hide();
+                $('#mrt3').show();
+            })
+            $("#mrtr4").click(function(){
+                $('#dali4').hide();
+                $('#av4').hide();
+                $('#gw4').hide();
+                $('#gs4').hide();
+                $('#mrt4').show();
+            })
+            $("#mrtr5").click(function(){
+                $('#dali5').hide();
+                $('#av5').hide();
+                $('#gw5').hide();
+                $('#gs5').hide();
+                $('#mrt5').show();
+            })
+        });
+        </script>
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="styles/div.css">
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <h4>Welcome my friends. Tashi delek.</h4>
+                <h5>Click on any of the frames in the image below to randomly change that image frame to that of me or one of my four fellow travellers. </h5>
+                <h5>Or click the image below to load the whole picture of one of my fellow travellers or myself. You must choose your path.</h5>
+                <img src="images/dali.jpeg" alt="" class="hdimg dalihd" id="dali">
+                <img src="images/avatar.jpeg" alt="" class="hdimg" id="av">
+                <img src="images/gw.jpeg" alt="" class="hdimg" id="gw">
+                <img src="images/Jean.jpeg" alt="" class="hdimg" id="gs">
+                <img src="images/mrt.jpeg" alt="" class="hdimg" id="mrt">
+                <div id="headblk"></div>
+            </div>
+            <div id="center">
+                <div class="centblk1" onclick="RandRow1()">
+                    <img id="dali1" src="images/dali1.png" alt="">
+                    <img id="av1" class="hidden" src="images/av1.png" alt="" >
+                    <img id="gw1" class="hidden" src="images/gw1.png" alt="" >
+                    <img id="gs1" class="hidden" src="images/gs1.png" alt="" >
+                    <img id="mrt1" class="hidden" src="images/mrt1.png" alt="" >
+                </div> <!--end of center blk inline-block-->
+                <div class="centblk2" onclick="RandRow2()">
+                    <img id="dali2" src="images/dali2.png" alt="">
+                    <img id="av2" class="hidden" src="images/av2.png" alt="" >
+                    <img id="gw2" class="hidden" src="images/gw2.png" alt="" >
+                    <img id="gs2" class="hidden" src="images/gs2.png" alt="" >
+                    <img id="mrt2" class="hidden" src="images/mrt2.png" alt="" >
+                </div> <!--end of center blk inline-block-->
+                <div class="centblk3" onclick="RandRow3()">
+                    <img id="dali3" src="images/dali3.png" alt="">
+                    <img id="av3" class="hidden" src="images/av3.png" alt="" >
+                    <img id="gw3" class="hidden" src="images/gw3.png" alt="" >
+                    <img id="gs3" class="hidden" src="images/gs3.png" alt="" >
+                    <img id="mrt3" class="hidden" src="images/mrt3.png" alt="" >
+                </div> <!--end of center blk inline-block-->
+                <div class="centblk4" onclick="RandRow4()">
+                    <img id="dali4" src="images/dali4.png" alt="">
+                    <img id="av4" class="hidden" src="images/av4.png" alt="" >
+                    <img id="gw4" class="hidden" src="images/gw4.png" alt="" >
+                    <img id="gs4" class="hidden" src="images/gs4.png" alt="" >
+                    <img id="mrt4" class="hidden" src="images/mrt4.png" alt="" >
+                </div> <!--end of center blk inline-block-->
+                <div class="centblk5" onclick="RandRow5()">
+                    <img id="dali5" src="images/dali5.png" alt="">
+                    <img id="av5" class="hidden" src="images/av5.png" alt="" >
+                    <img id="gw5" class="hidden" src="images/gw5.png" alt="" >
+                    <img id="gs5" class="hidden" src="images/gs5.png" alt="" >
+                    <img id="mrt5" class="hidden" src="images/mrt5.png" alt="" >
+                </div> <!--end of center blk inline-block-->
+            </div> <!-- end of center -->
+            <div id="right">
+                <div class="rtblk1">
+                    <img src="images/dali.jpeg" alt="" class="rtimg" id="dalir1">
+                    <img src="images/avatar.jpeg" alt="" class="rtimg" id="avr1">
+                    <img src="images/gw.jpeg" alt="" class="rtimg" id="gwr1">
+                    <img src="images/Jean.jpeg" alt="" class="rtimg" id="gsr1">
+                    <img src="images/mrt.jpeg" alt="" class="rtimg" id="mrtr1">
+                </div> <!--end of center blk inline-block-->
+                <div class="rtblk2">
+                    <img src="images/dali.jpeg" alt="" class="rtimg" id="dalir2">
+                    <img src="images/avatar.jpeg" alt="" class="rtimg" id="avr2">
+                    <img src="images/gw.jpeg" alt="" class="rtimg" id="gwr2">
+                    <img src="images/Jean.jpeg" alt="" class="rtimg" id="gsr2">
+                    <img src="images/mrt.jpeg" alt="" class="rtimg" id="mrtr2">
+                </div> <!--end of center blk inline-block-->
+                <div class="rtblk3">
+                    <img src="images/dali.jpeg" alt="" class="rtimg" id="dalir3">
+                    <img src="images/avatar.jpeg" alt="" class="rtimg" id="avr3">
+                    <img src="images/gw.jpeg" alt="" class="rtimg" id="gwr3">
+                    <img src="images/Jean.jpeg" alt="" class="rtimg" id="gsr3">
+                    <img src="images/mrt.jpeg" alt="" class="rtimg" id="mrtr3">
+                </div> <!--end of center blk inline-block-->
+                <div class="rtblk4">
+                    <img src="images/dali.jpeg" alt="" class="rtimg" id="dalir4">
+                    <img src="images/avatar.jpeg" alt="" class="rtimg" id="avr4">
+                    <img src="images/gw.jpeg" alt="" class="rtimg" id="gwr4">
+                    <img src="images/Jean.jpeg" alt="" class="rtimg" id="gsr4">
+                    <img src="images/mrt.jpeg" alt="" class="rtimg" id="mrtr4">
+                </div> <!--end of center blk inline-block-->
+                <div class="rtblk5">
+                    <img src="images/dali.jpeg" alt="" class="rtimg" id="dalir5">
+                    <img src="images/avatar.jpeg" alt="" class="rtimg" id="avr5">
+                    <img src="images/gw.jpeg" alt="" class="rtimg" id="gwr5">
+                    <img src="images/Jean.jpeg" alt="" class="rtimg" id="gsr5">
+                    <img src="images/mrt.jpeg" alt="" class="rtimg" id="mrtr5">
+                </div> <!--end of center blk inline-block-->
+            </div> <!--end of right -->
+            <div id="farright">
+                <p>click the images at left to load the coresponding slice to the main image</p>
+            </div>
+        </div><!-- end of wrap -->
+    </body>
+</html>

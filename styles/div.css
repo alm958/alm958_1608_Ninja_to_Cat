@@ -1,0 +1,126 @@
+/* background color and opacity set for visibility
+   don't forget to reset background color and comment-out or remove opacity */
+*{margin: 0; padding:0;}
+/* wrap contains all elements */
+
+    #wrap{
+        width: 1150px;
+        height: 1000;
+        margin: 0 auto;
+        padding: 0;
+        background: linear-gradient(navy,blue,orange);
+    }
+    #header{
+        width: 1100px;
+        height: 144px;
+        margin: 0px 10px 0 10px;
+        padding: 10px 0 0 0;
+        color: white;
+    }
+        #header (h5, h4, h3, h2){
+            margin-top: 0;
+            padding-top :0;
+        }
+        .hdimg{
+            width:60px;
+            height: auto;
+            margin:10px 0;
+        }
+        #headblk{
+            display:inline-block;
+            width:500px
+        }
+        .dalihd{
+            margin-left: 55px;
+        }
+/* center, & right are set to inline-block
+   with vertical-aligh:top */
+    #center{
+        width: 410px;
+        height: 600px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 0 25px;
+        color:white;
+    }
+        .centblk1{
+            width: 407px;
+            height: 115px;
+            display: block;
+            margin: 0;
+        }
+        .centblk2{
+            width: 407px;
+            height: 115px;
+            display: block;
+            margin: 0;
+        }
+        .centblk3{
+            width: 407px;
+            height: 116px;
+            display: block;
+            margin: 0;
+        }
+        .centblk4{
+            width: 407px;
+            height: 118px;
+            display: block;
+            margin: 0;
+        }
+        .centblk5{
+            width: 407px;
+            height: 79px;
+            display: block;
+            margin: 0;
+        }
+    #right{
+        width: 300px;
+        height: 600px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        color:white;
+    }
+        .rtimg{
+            width:50px;
+            height: auto;
+            padding:10px 0;
+        }
+        .rtblk1{
+            width: 407px;
+            height: 115px;
+            display: block;
+            margin: 0px 10px;
+        }
+        .rtblk2{
+            width: 407px;
+            height: 115px;
+            display: block;
+            margin: 0px 10px;
+        }
+        .rtblk3{
+            width: 407px;
+            height: 116px;
+            display: block;
+            margin: 0px 10px;
+        }
+        .rtblk4{
+            width: 407px;
+            height: 118px;
+            display: block;
+            margin: 0px 10px;
+        }
+        .rtblk5{
+            width: 407px;
+            height: 79px;
+            display: block;
+            margin: 0px 10px;
+        }
+        #farright{
+            width: 150px;
+            height: 600px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            color:white;
+        }
